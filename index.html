@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Site Base</title>
+    <link rel="stylesheet" href="CSS/config.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/carrossel.css" />
+    <link rel="stylesheet" href="CSS/mobile.css" />
+    <link rel="stylesheet" href="CSS/responsividade.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+
+</head>
+<body>
+    <section id="sct_topo">
+        <div class="barra-superior">
+            <span class="align-flex-center-row m-1 mt-0 mb-0">
+                <i class="fas fa-phone icon-top mr-1"></i>
+                (16) 99635-7654
+            </span>
+            <span class="align-flex-center-row m-1 mt-0 mb-0">
+                <i class="fas fa-envelope icon-top mr-1"></i>
+               conexaoJesus.1IEQ_Taqua@gmail.com
+            </span>
+            <div class="container-icones-topo-mobile">
+                <span><i class="fab fa-facebook icon-top m-1 mt-0 mb-0"></i></span>
+                <span><i class="fab fa-instagram icon-top m-1 mt-0 mb-0"></i></span>
+            </div>
+            
+        </div>
+
+        <div id="menuDesktop" class="container-menu">
+            <div class="menu-desktop align-flex-center-row p-2">
+                <img src="IMG/logo.jpg" alt="Logo" onclick="window.location.href='index.html'" class="logo-desktop w-25"/>
+                <div class="w-75 align-flex-center-column  p-2 justify-content-start align-items-start">
+                    <div class="w-100 text-left titulo-menu-desktop">
+                        Conexão Jesus <i>(Page)</i>
+                    </div>
+                    <ul class="w-100 align-flex-center-row justify-content-start">
+                        <li class="aba-menu-desktop" title="Home" onclick="window.location.href='index.html'">
+                            Home
+                        </li>
+                        <li class="aba-menu-desktop" title="Sobre Nós" onclick="window.location.href='#SobreNos'">
+                            Sobre Nós
+                        </li>
+                        <li class="aba-menu-desktop" title="Lojinha" onclick="window.location.href='#Lojinha'">
+                            Lojinha
+                        </li>
+                        <li class="aba-menu-desktop" title="Contato" onclick="window.location.href='#Contato'">
+                            Contato
+                        </li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+
+        <div id="menuMobile" class="menu-mobile d-none">
+            <div class="w-25 align-flex-center-column">
+                <i class="fas fa-bars icon-menu-mobile" onclick="abrirMenuMobile()"></i>
+            </div>
+            <div class="w-50 text-center">
+                <span class="titulo-site-mobile">Conexão Jesus <i>(page)</i></span>
+            </div>
+            <div class="w-25 align-flex-center-column">
+                <img src="IMG/logo.jpg" alt="Logo" onclick="window.location.href='/index.html'" class="logo-mobile"/>
+            </div>
+        </div>
+
+        <div id="menuMobileLateral" class="menu-mobile-lateral menu-mobile-off" >
+            <div class="w-100 align-flex-center-row">
+                <img src="IMG/logo.jpg" alt="Logo" onclick="window.location.href='/index.html'" class="logo-mobile"/>
+                <span class="titulo-site-mobile text-center m-1">
+                    Conexão Jesus <br> <i>(Page)</i>
+                </span>
+                <i class="fas fa-times icon-menu-mobile" onclick="fecharMenuMobile()"></i>
+            </div>
+            <ul class="w-100 align-flex-center-column justify-content-start mt-2">
+                <li class="aba-menu-mobile" title="Home" onclick="selecionarMenuMobile('/index.html')">
+                    Home
+                </li>
+                <li class="aba-menu-mobile" title="Sobre Nós" onclick="selecionarMenuMobile('#SobreNos')">
+                    Sobre Nós
+                </li>
+                <li class="aba-menu-mobile" title="Lojinha" onclick="selecionarMenuMobile('#Lojinha')">
+                    Lojinha
+                </li>
+                <li class="aba-menu-mobile" title="Contato" onclick="selecionarMenuMobile('#Contato')">
+                    Contato
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="sct_cards" class="">
+        <div class="carousel">
+            <div class="carousel-images">
+                <div class="carousel-item item1" style="background-image: url(IMG/card1.jpeg);"></div>
+                <div class="carousel-item item2" style="background-image: url(IMG/card2.jpeg);"></div>
+                <div class="carousel-item" style="background-image: url(IMG/card3.jpeg);"></div>
+            </div>
+            <button class="carousel-button prev">&laquo; Anterior</button>
+            <button class="carousel-button next">Próximo &raquo;</button>
+        </div>
+    </section>
+
+    <section id="sct_bem_vindo">
+        <div class="container-bem-vindo">
+            <div class="placa-bem-vindo">
+                <h2 class="text-center titulo-bem-vindo">Bem-Vindo</h2>
+                <h4 class="text-center">Essa é uma <i>page</i> dedicado ao movimento Conexão Jesus.</h4>
+            </div>
+            <div class="container-img">
+                <img src="IMG/bemVindo.jpeg" alt="" class="w-100">
+            </div>
+        </div>
+    </section>
+
+
+    <a name="SobreNos"></a>
+    <section id="sct_sobre_nos">
+        <div class="container-sobre-nos">
+            <h2>Sobre nós</h2>
+            <p>Somos um grupo de jovens da 1ª Igreja do Evangelho Quadrangular de Taquaritinga.</p>
+            <p>Nascido no ano de 2015 foi criado para aproximar jovens de Deus atraves de um dia em expecifico todas as semanas, realizando periodos de oração em conjunto.</p>
+            <p>Dedicado a incentivar o jovem a ter comunhão com Cristo!</p>
+            <br />
+
+            <p>Ser um cristão é reconhecer que precisamos ter um relacionamento com cristo, somos filho!</p>
+            <p>
+                Seja qual for a dificuldade Jesus morreu por você na cruz, ele te ama como niguém jamais vai amar. E tudo que ele 
+                espera é relacionar com seus filhos, relacionar com você!
+            </p>
+
+            <br />
+            <p>
+                Ficou interessado? entre em contato com a gente!
+            </p>
+
+            <div class="d-flex justify-content-center mt-2">
+                <div class="botao-sobre-nos" title="Entre em contato" onclick="window.location.href='#Contato'">
+                    Contato
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a name="Lojinha"></a>
+    <section id="sct_lojinha">
+        <div class="container-lojinha align-flex-center-column">
+            <h2 class="w-100">Lojinha</h2>
+           
+            <div class="container-produtos w-100 align-flex-center-row justify-content-between">
+                <!--Produto 1-->
+                <div class="card-produto-container align-flex-center-column"
+                onmouseover="hoverCardFotos(true, 1)"  
+                onmouseout="hoverCardFotos(false, 1)">
+                    <div class="espacamento-fotos">
+                        <img src="IMG/Camiseta1_frente.png" class="w-100 foto-principal-off" alt="" 
+                        id="fotoPrincipal_1">
+                    </div>
+                    <div id="fotosParalelas_1">
+                        <div class="foto-frente">
+                            <img src="IMG/Camiseta1_frente.png" alt="Camiseta 1 Frente">
+                        </div>
+                        <div class="foto-verso">
+                            <img src="IMG/Camiseta1_verso.png" alt="Camiseta 1 Verso">
+                        </div>
+                    </div>
+                    
+                    <h3 class="mt-1">
+                        Camiseta Jeremias 
+                        <span>29:13</span>
+                    </h3>
+                    <h2>
+                        R$ 50,00
+                    </h2>
+                    <div class="botao-pedir mt-1" title="Pedir Camiseta">
+                        Pedir
+                    </div>
+                </div>
+
+
+
+
+                <!--Produto 2-->
+                <div class="card-produto-container align-flex-center-column"
+                onmouseover="hoverCardFotos(true, 2)"  
+                onmouseout="hoverCardFotos(false, 2)">
+                    <div class="espacamento-fotos">
+                        <img src="IMG/Camiseta2_frente.png" class="w-100 foto-principal-off" alt="" 
+                        id="fotoPrincipal_2">
+                    </div>
+                    <div id="fotosParalelas_2">
+                        <div class="foto-frente">
+                            <img src="IMG/Camiseta2_frente.png" alt="Camiseta 2 Frente">
+                        </div>
+                        <div class="foto-verso">
+                            <img src="IMG/Camiseta2_verso.png" alt="Camiseta 2 Verso">
+                        </div>
+                    </div>
+                    
+                    <h3>
+                        Camiseta (Black) João 
+                        <span>15:19</span>
+                    </h3>
+                    <h2>
+                        R$ 50,00
+                    </h2>
+                    <div class="botao-pedir mt-1" title="Pedir Camiseta">
+                        Pedir
+                    </div>
+                </div>
+
+
+
+
+                <!--Produto 3-->
+                <div class="card-produto-container align-flex-center-column"
+                onmouseover="hoverCardFotos(true, 3)"  
+                onmouseout="hoverCardFotos(false, 3)">
+                    <div class="espacamento-fotos">
+                        <img src="IMG/Camiseta3_frente.png" class="w-100 foto-principal-off" alt="" 
+                        id="fotoPrincipal_3">
+                    </div>
+                    <div id="fotosParalelas_3">
+                        <div class="foto-frente">
+                            <img src="IMG/Camiseta3_frente.png" alt="Camiseta 3 Frente">
+                        </div>
+                        <div class="foto-verso">
+                            <img src="IMG/Camiseta3_verso.png" alt="Camiseta 3 Verso">
+                        </div>
+                    </div>
+                    
+                    <h3>
+                        Camiseta (White) João 
+                        <span>15:19</span>
+                    </h3>
+                    <h2>
+                        R$ 60,00
+                    </h2>
+                    <div class="botao-pedir mt-1" title="Pedir Camiseta">
+                        Pedir
+                    </div>
+                </div>
+
+
+            </div>
+           
+        </div>
+    </section>
+
+    <a name="Contato"></a>
+    <section id="sct_contato">
+        <div class="container-contato">
+            <h2 class="w-100 mt-2">Entre em Contato</h2>
+            <div class="container-formulario">
+                <div class="coluna-contato w-50 align-flex-center-column">
+                    <input type="text" placeholder="Nome" class="campo-formulario">
+                    <input type="tel" placeholder="Telefone" class="campo-formulario">
+                    <input type="email" placeholder="E-mail" class="campo-formulario">
+                    <textarea name="Mensagem" id="Mensagem" rows="5" class="campo-formulario" placeholder="Mensagem"></textarea>
+                    <div class="botao-enviar-mensagem mt-2">Enviar Mensagem</div>
+                </div>
+                <div class="coluna-contato w-50 align-flex-center-column justify-content-start position-relative overflow-hidden">
+
+                    <!--Foto de contato 1-->
+                    <div class="foto1-contato">
+                        <img src="IMG/FotoContato.jpeg" alt="Foto Contato" class="foto-contato w-100 position-absolute">
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+        
+    <footer>
+        <span class="align-flex-center-row m-1 mt-0 mb-0">
+            <i class="fas fa-phone icon-top mr-1"></i>
+            (16) 99635-7654
+        </span>
+        <span class="align-flex-center-row m-1 mt-0 mb-0">
+            <i class="fas fa-envelope icon-top mr-1"></i>
+        conexaoJesus.1IEQ_Taqua@gmail.com
+        </span>
+        <span>
+            <i class="fab fa-facebook icon-top m-1 mt-0 mb-0"></i> 
+            <i class="fab fa-instagram icon-top m-1 mt-0 mb-0"></i>
+        </span>
+
+        By Conexão Jesus - 2024
+    </footer>
+
+
+
+    <script src="JS/script.js"></script>
+    <script src="JS/carrossel.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,458 @@
+
+/*Style Geral*/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Estilo para a barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+    height: 12px; /* Altura da barra de rolagem horizontal */
+}
+
+/* Estilo para a trilha da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Cor de fundo da trilha */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+/* Estilo para o polegar da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Cor do polegar */
+    border-radius: 10px; /* Cantos arredondados */
+}
+
+/* Estilo para o polegar ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Cor do polegar ao passar o mouse */
+}
+
+
+body{
+background: #ccc;
+
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*Style Barra Superior - INI*/
+.icon-top {
+    font-size: 20px;
+    color: #fff;
+}
+
+.barra-superior
+{
+    background: #252525;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: rgb(72, 4, 4) solid 3px;
+}
+
+
+/*Style Menu*/
+.container-menu
+{
+    width: 100%;
+}
+
+
+/*Style Menu Desktop*/
+.titulo-menu-desktop
+{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.titulo-menu-desktop i
+{
+    font-size: .9rem;
+    margin-left: -.2rem;
+}
+
+
+.menu-desktop
+{
+    background: linear-gradient(180deg, #480404, transparent);
+}
+
+.logo-desktop
+{
+    border-radius: 100%;
+    width: 10rem;
+    border: solid 1px #e3e3e3;
+    box-shadow: 0px 1px 19px -14px;
+}
+
+.aba-menu-desktop
+{
+    padding: 1rem;
+    list-style-type: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 8rem;
+    background: #252525;
+    text-align: center;
+    color: #fff;
+    transition: 1s all;
+}
+
+.aba-menu-desktop:hover
+{
+    background: #363636;
+    transition: .5s;
+}
+
+
+
+/*Cards Fotos*/
+.card{
+    width: 100%;
+}
+
+.card-img
+{
+    width: 100%;
+    max-width: 20rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    height: 15rem;
+    object-fit: cover;
+}
+
+/*Bem Vindo*/
+.container-bem-vindo
+{    
+    background: linear-gradient(180deg, #cccccc -5%, white 9%, #fff 90%);
+    min-height: 20rem;
+    padding: 2rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.placa-bem-vindo
+{
+    width: 48%;
+    background: #efefef;
+    padding: 2rem;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 1s;
+}
+
+.placa-bem-vindo:hover
+{
+    box-shadow: inset 0px 0px 0 20px #252525;
+    transition: 1s ;
+}
+
+.placa-bem-vindo h2
+{
+    font-size: 3rem;
+    color: #3c3c3c;
+    margin-bottom: .5rem;
+    cursor: context-menu;
+}
+
+.placa-bem-vindo h4{
+    color: #3c3c3c;
+}
+
+
+.container-img
+{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+
+.container-img img
+{
+    width: 100%;
+    object-fit: cover;
+    height: 18rem;
+
+}
+
+
+/*Sobre nós*/
+.container-sobre-nos
+{
+    background: #bcb293;
+    min-height: 5rem;
+    padding: 2rem 5rem;
+}
+
+.container-sobre-nos h2
+{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.container-sobre-nos p
+{
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+
+.botao-sobre-nos
+{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: bold;
+    border: solid 2px #fff;
+    cursor: pointer;
+    width: 100%;
+    max-width: 10rem;
+    text-align: center;
+    padding: .5rem 0rem;
+    transition: .5s all;
+}
+
+.botao-sobre-nos:hover
+{
+    background: #fff;
+    color: #252525;
+    transition: 1s;
+}
+
+
+/*Lojinha*/
+.container-lojinha
+{
+    background: #fff;
+    min-height: 5rem;
+    padding: 2rem 5rem;
+    justify-content: flex-start;
+}
+
+.container-lojinha h2
+{
+    font-size: 2.5rem;
+    color: #363636;
+}
+
+.container-produtos
+{
+    max-width: 63rem;
+}
+
+
+.card-produto-container
+{   
+    position: relative;
+    width: 100%;
+    max-width: 17rem;
+    min-height: 20rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    background: linear-gradient(45deg, #f4f0f0, #939393);
+    border-radius: 7px;
+    box-shadow: 1px 1px 11px -7px;
+    margin: 2rem 1rem;
+}
+
+.card-produto-container h3 /*Nome Produto*/
+{
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+.card-produto-container h3 span /*Versiculo ou detalhe*/
+{
+    font-size: .9rem;
+}
+
+
+.card-produto-container h2 /*Preço produto*/
+{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.espacamento-fotos
+{
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto-frente
+{
+    position: absolute;
+    max-width: 12rem;
+    max-height: 12rem;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.foto-frente img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+}
+
+.foto-verso
+{
+    position: absolute;
+    max-width: 12rem;
+    max-height: 12rem;
+    bottom: 10rem;
+    right: 1rem;
+    overflow: hidden;
+}
+
+.foto-verso img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+}
+
+.foto-principal-off
+{
+    opacity: 0;
+    transition: 2s all;
+}
+
+.foto-principal-on
+{
+    opacity: 1;
+    transition: 1s all;
+}
+
+.botao-pedir
+{
+    width: 8rem;
+    text-align: center;
+    border: solid 2px #bcb293;
+    padding: .2rem 1rem;
+    background: #bcb293;
+    color: #fff;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+
+
+/*Contato*/
+
+.container-contato
+{
+    background: linear-gradient(0deg, #e3e3e3 69%, #fff 89%);
+    min-height: 37rem;
+    padding: 2rem 5rem;
+}
+
+.container-contato h2
+{
+    font-size: 2.5rem;
+    color: #363636;
+}
+
+.container-formulario
+{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 2rem ;
+    padding-left: 0;
+}
+
+.campo-formulario
+{
+    width: 100%;
+    padding: 1rem;
+    margin: .4rem 0;
+    padding: .6rem 1rem;
+    max-width: 30rem;
+    border-radius: 7px;
+    border: solid 1px #ccc;
+}
+
+.botao-enviar-mensagem
+{
+    width: 100%;
+    max-width: 15rem;
+    padding: .6rem 1rem;
+    cursor: pointer;
+    text-align: center;
+    background: #4d0c0c;
+    color: #fff;
+    border-radius: 13px;
+}
+
+.foto-moldura
+{
+    margin-top: -8rem;
+}
+
+.foto-contato
+{
+    width: 46%;
+    max-width: 18rem;
+    max-height: 14rem;
+    object-fit: cover;
+    position: initial;
+}
+
+.foto1-contato
+{
+    z-index: 10;
+    background-image: url('../IMG/post_it.png');
+    width: 45rem;
+    height: 31rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3rem;
+}
+
+
+
+footer
+{
+    background: linear-gradient(180deg, #E3E3E3 9%, #480404 18%);
+    min-height: 10rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+}
