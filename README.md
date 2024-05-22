@@ -1,6 +1,6 @@
 # Conexão Jesus
 
-![Logo Conexão Jesus](/IMG/logo.jpgo)
+![Logo Conexão Jesus](/IMG/logo.jpg)
 
 ---
 ## Bem-Vindo
